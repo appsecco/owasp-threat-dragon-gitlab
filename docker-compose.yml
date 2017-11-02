@@ -1,0 +1,21 @@
+# OWASP Threat Draon with Gitlab Development Setup
+
+version: "2"
+services:
+  td-docker:
+    build:
+      context: ./
+      dockerfile: Dockerfile-dev
+    ports:
+      - "3000:3000"
+    depends_on:
+      - td-gitlab-docker
+    env_file:
+      - ./.env
+
+  td-gitlab-docker:
+    image: gitlab/gitlab-ce:10.1.0-ce.0
+    ports:
+      - "3080:80"
+    env_file:
+      - ./.env
