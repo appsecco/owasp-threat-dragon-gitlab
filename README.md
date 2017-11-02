@@ -94,3 +94,5 @@ npm start
 ```
 
 Visit http://127.0.0.1:3000 to access the application
+
+Please feel free to make a pull request or tweet to me [@pingsns](https://twitter.com/pingsns) for improvements and suggestions.
