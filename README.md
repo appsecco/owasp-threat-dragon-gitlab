@@ -2,7 +2,7 @@
 
 This project is a fork of the original [OWASP Threat Dragon](https://github.com/mike-goodwin/owasp-threat-dragon) web application by Mike Goodwin with Gitlab integration instead of Github. You can use it with the [Gitlab.com](https://gitlab.com) or your own instance of Gitlab.
 
-Gitlab will be used as the OAuth provider for authentication and for model storage. For integration with Gitlab, an application must be created in Gitlab. Refer to [this](https://docs.gitlab.com/ee/integration/gitlab.html) for detailed instructions. The Redirect URL is the externally accessible  url your users will be redirected to after authentication (Ex: `http://192.168.56.100:3000/oauth/gitlab`). For local test deployments, you can use `http://127.0.0.1:3000/oauth/gitlab`.
+Gitlab will be used as the OAuth provider for authentication and for model storage. For integration with Gitlab, an application must be created in Gitlab. Refer to [this](https://docs.gitlab.com/ce/integration/gitlab.html) for detailed instructions. The Redirect URL is the externally accessible  url your users will be redirected to after authentication (Ex: `http://192.168.56.100:3000/oauth/gitlab`). For local test deployments, you can use `http://127.0.0.1:3000/oauth/gitlab`.
 
 ### Environment variables:
 
@@ -94,5 +94,7 @@ npm start
 ```
 
 Visit http://127.0.0.1:3000 to access the application
+
+For documentation on how to use Threat Dragon, refer to the Official Documentation at http://docs.threatdragon.org/
 
 Please feel free to make a pull request or tweet to me [@pingsns](https://twitter.com/pingsns) for improvements and suggestions.
